@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Navbar with Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <!-- Left side links -->
+      <ul class="nav-links nav-left">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+
+      <!-- Right side links + search -->
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <form class="search-form" onsubmit="searchFunction(event)">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <button type="submit">🔍</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dummy Page Content -->
+  <div class="content">
+    <h1>Welcome to the Website</h1>
+    <p>Scroll to see the navbar style change and try the search bar.</p>
+    <div style="height: 1500px;"></div>
+  </div>
+<!-- Google Maps Embed -->
+<div class="map-container">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609942255!2d72.7410990742296!3d19.082197839311232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63d76d631fb%3A0x7c09e7a01cfa2d5f!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1720341629123!5m2!1sen!2sin"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
